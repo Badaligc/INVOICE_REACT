@@ -11,6 +11,8 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../redux/user';
 import { showToast } from '../utils/functions';
+import './Auth.css';
+
 
 const Auth = () => {
   const classes = useStyles();
@@ -62,9 +64,9 @@ const Auth = () => {
   };
 
   return (
-    <Box sx={{ width: '100%', minHeight: '100vh' }}>
-      <Grid container className={classes.authGridContainer}>
-        <Grid item md={3} className={classes.authGridImage}>
+    <Box className='box1' sx={{ width: '100%', minHeight: '100vh' }}>
+      <Grid container className={classes.authGridContainer} >
+        <Grid item md={3} className={classes.authGridImage} >
           <img
             src={login}
             alt="Sign in to Invoicer"
@@ -72,9 +74,8 @@ const Auth = () => {
           />
         </Grid>
 
-        <Grid item md={9} xs={12} className={classes.authForm}>
-          <img src={invoiceLogo} alt="Invoicer" className="w-[200px]" />
-
+        <Grid item md={6} xs={12} class="h-1/2"  className={classes.authForm}id="myElement">
+          <img src={invoiceLogo} alt="Invoicer" className="w-[200px]"/>
           {createAccount ? (
             <Box
               className={classes.authFormContainer}

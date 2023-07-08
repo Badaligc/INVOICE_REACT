@@ -1,0 +1,13 @@
+
+#myElement{
+    border-style:inset;
+    padding:50px;
+    margin: 120px 0px 0px 230px;
+    display: grid;
+    place-items: center;   
+    border-radius: 15px;
+    background: #a49bee;
+    box-shadow: inset -7px -7px 10px #928ad4,
+            inset 7px 7px 10px #b6acff;
+    
+}
