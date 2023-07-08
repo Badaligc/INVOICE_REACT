@@ -180,7 +180,7 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
           )}
 
           <footer className="px-8 py-4 bg-gray-200 w-full">
-            <p className="text-sm text-center">Thanks for the patronage!</p>
+            <p className="text-sm text-center">Thanks</p>
           </footer>
         </div>
       )}
